@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>API Checker</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                API<span>Checker</span>
+            </div>
+
+            <a href="../index.html">
+                Volver al inicio
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <div class="badge">DEV TOOL</div>
+
+            <h1>Comprueba cualquier API</h1>
+
+            <p>
+                Introduce la URL de una API y consulta su respuesta.
+            </p>
+        </section>
+
+        <form class="form" id="apiForm">
+
+            <input type="url" id="apiUrl" placeholder="https://jsonplaceholder.typicode.com/users" required>
+
+            <button type="submit">
+                Comprobar
+            </button>
+
+        </form>
+
+        <div class="result" id="result">
+
+            <div class="result-header">
+                <h2>Respuesta</h2>
+
+                <span class="status" id="status">
+                    --
+                </span>
+            </div>
+
+            <div class="response-title">
+                Datos devueltos
+            </div>
+
+            <pre id="response"></pre>
+
+        </div>
+
+    </main>
+
+    <footer>
+        API Checker - Herramienta para desarrolladores
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
